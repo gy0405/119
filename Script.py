@@ -41,7 +41,7 @@ def get_kakao_tokens():
             print("인증 코드 요청 성공")
 
         url = 'https://kauth.kakao.com/oauth/token'
-        rest_api_key = '1a70f42bd5566399a71b5b7d2f474fca'
+        rest_api_key = ''
         redirect_uri = 'https://example.com/oauth'
 
         data = {
