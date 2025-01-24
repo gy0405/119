@@ -30,7 +30,7 @@ def get_kakao_tokens():
         password_field.send_keys(Keys.RETURN)
 
         time.sleep(25)
-        driver.get("https://kauth.kakao.com/oauth/authorize?client_id=1a70f42bd5566399a71b5b7d2f474fca&redirect_uri=https://example.com/oauth&response_type=code&scope=profile_nickname,friends,talk_message")
+        driver.get("https://kauth.kakao.com/oauth/authorize?client_id=&redirect_uri=https://example.com/oauth&response_type=code&scope=profile_nickname,friends,talk_message")
 
         time.sleep(5)
         current_url = driver.current_url
@@ -70,7 +70,7 @@ def get_kakao_tokens():
         url = "https://kauth.kakao.com/oauth/token"
         data = {
             "grant_type": "refresh_token",
-            "client_id": "1a70f42bd5566399a71b5b7d2f474fca",
+            "client_id": " ",
             "refresh_token": refresh_token,
         }
 
